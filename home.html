@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/mm.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== AOS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Ramy Rached </title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/mm.png" alt="">
+                <!-- <span>Ramy</span> -->
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#new" class="nav__link">Transformation</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="nav__link">Testimonial</a>
+                    </li>
+                </ul>
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+            <div class="nav__buttons">
+                <!-- Thems Moon -->
+                <i class="ri-moon-clear-fill nav__theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-fill"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__background"></div>
+            <div class="home__background next"></div>
+
+            <div class="home__content" data-aos="fade-right">
+                <h1 class="home__title">From passion to power</h1>
+                <p class="home__subtitle" id="subtitleText">
+                    “Join Coach Ramy Rashad and transform your body with elite bodybuilding training, discipline, and results that speak.”
+                </p>
+                <!-- <a href="#join" class="home__button">Learn More</a> -->
+            </div>
+
+            <!-- Video for mobile -->
+            <video class="home__video" autoplay muted loop playsinline>
+                <source src="assets/img/IMG_5459.mp4" type="video/mp4">
+            </video>
+        </section>
+        <!--==================== DESTINATION ====================-->
+        <!-- <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h3 class="section__subtitle">
+                        My <span>Intro</span>
+                    </h3>
+                    <h2 class="section__title">
+                        About Me
+                    </h2>
+                    <p class="about__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum maxime tempore ipsum dolorum minima aperiam corporis necessitatibus voluptates enim placeat nostrum, vitae reiciendis rerum magnam exercitationem aut? Reprehenderit, deserunt maiores!
+                    </p>
+                    <a href="" class="button">More</a>
+                </div>
+                <div class="about__image">
+                    <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+      171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+      448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+      270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+      439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+   </mask>
+   <g mask="url(#maskBorder)">
+      <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+      
+      <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+      192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+      580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+      40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+      175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+   </g>
+
+   <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+
+   <defs>
+      <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+         <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+      </pattern>
+
+      <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+         <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+      </pattern>
+
+      <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/6.jpg"/>
+   </defs>
+</svg>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="about section" id="about" data-aos="fade-left">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">About US</h2>
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eveniet doloremque accusantium exercitationem consectetur pariatur possimus, perferendis commodi repellendus quasi repudiandae adipisci. Unde neque eum blanditiis esse facilis minima
+                        sint!
+                    </p>
+                    <a href="#" class="button">Know More</a>
+                    <img src="assets/img/5.jpg" alt="" class="about__bread">
+                </div>
+                <img src="assets/img/3.jpg" alt="" class="about__image">
+            </div>
+        </section>
+        <!--==================== GALLERY ====================-->
+        <section class="new section" id="new" data-aos="fade-right">
+            <h2 class="section__title" data-lang="transformation">
+                Transformations
+            </h2>
+            <div class="new__container container">
+                <div class="new__swiper swiper" id="swiper1">
+                    <div class="swiper-wrapper slide">
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans1.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans2.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans3.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans4.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans5.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__swiper swiper" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans7.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans8.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans1.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans2.jpg" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== App ====================-->
+        <!-- <section class="app section bd-container">
+            <div class="app__container bd-grid">
+                <div class="app__data">
+                    <span class="section-subtitle">APP</span>
+                    <h2 class="section__title">App is aviable</h2>
+                    <p class="app__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit architecto molestiae consectetur provident. Commodi, itaque?</p>
+                    <div class="app__stores">
+                        <a href="#"><img src="assets/img/1.jpg" alt="" class="app__store"></a>
+                        <a href="#"><img src="assets/img/5.jpg" alt="" class="app__store"></a>
+                    </div>
+                </div>
+                <img src="assets/img/6.jpg" alt="" class="app__img">
+            </div>
+        </section> -->
+
+        <section class="section call" id="call" data-aos="fade-left">
+            <div class="discount__container container grid call__grid">
+                <div class="discount__data">
+                    <h2 class="discount__title">Book Your Consultation Call</h2>
+                    <p class="discount__description">
+                        Before subscribing to any package, you must book a consultation call with the coach. <br> He’ll explain everything and help you choose what’s best for your goals. <br><br> 💳 <strong>Price: $15</strong> – Once paid, the coach will
+                        contact you directly to schedule the call.
+                    </p>
+                    <a href="#" class="button-glow">
+                            Pay & Book Now
+                    </a>
+                </div>
+
+                <img src="assets/img/2.jpg" alt="Consultation Call" class="discount__img call__img" />
+            </div>
+        </section>
+        <!--==================== PRICING ====================-->
+        <section class="packages section" id="pricing">
+            <h1 class="section__title" data-lang="packages">Exclusive Now</h1>
+            <!-- <p>I will help you reach the best version of yourself</p> -->
+            <div class="package-container">
+                <!-- Package Basic -->
+                <div class="package silver" data-aos="fade-right">
+                    <h2 data-lang="ignitepackage"> Bronze</h2>
+                    <p class="price"><span>DRH 800</span></p>
+
+                    <p class="animated-line" data-lang="per3month">PER / 1 MONTH</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span>Custom diet plan tailored to your body with calculated portions</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Workout schedule with reps, sets & illustrated exercises</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Supplement schedule with precise dosages</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Hormone protocol in PDF (optional – only for users of hormones)</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Follow-up every 7–14 days depending on your level</span></li>
+                        <!-- <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> <span>No online video sessions included</span></li> -->
+                    </ul>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <a href="#call" class="animationbutttonpricieng" data-lang="packagebutton">Get Expert Advice</a>
+                </div>
+                <!-- Package 1 Premium -->
+                <div class="package gold" style="position: relative;" data-aos="fade-left">
+                    <!-- <div class="most-popular-banner">
+                        <span data-lang="most">MOST SELLER</span>
+                    </div> -->
+                    <h2 style="margin-top: .5rem;" data-lang="powerpackage">Silver</h2>
+                    <p class="price"><span>DRH 1500</span></p>
+                    <p class="animated-line" data-lang="per3month">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span>Custom diet plan tailored to your body with calculated portions</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Workout schedule with reps, sets & illustrated exercises</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Supplement schedule with precise dosages</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Hormone protocol in PDF (optional – only for users of hormones)</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Follow-up every 7–14 days depending on your level</span></li>
+                        <!-- <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> <span>No online video sessions included</span></li> -->
+                    </ul>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <a href="#call" class="animationbutttonpricieng" data-lang="packagebutton">Get Expert Advice</a>
+                </div>
+                <!-- Package 2 VIP -->
+                <div class="package vip" data-aos="fade-right">
+                    <h2 data-lang="limt">Gold</h2>
+                    <p class="price"><span>DRH 2400</span></p>
+                    <p class="animated-line" data-lang="per3month">PER / 6 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span>Custom diet plan tailored to your body with calculated portions</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Workout schedule with reps, sets & illustrated exercises</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Supplement schedule with precise dosages</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Hormone protocol in PDF (optional – only for users of hormones)</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span>Follow-up every 7–14 days depending on your level</span></li>
+                        <!-- <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> <span>No online video sessions included</span></li> -->
+                    </ul>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <a href="#call" class="animationbutttonpricieng" data-lang="packagebutton">Get Expert Advice</a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section" id="testimonial" data-aos="fade-right">
+            <h2 class="section__title">What Are <br> They Saying</h2>
+            <div class="testimonial__container container grid">
+                <img src="assets/img/1.jpg" alt="" class="testimonial__img">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Ama Dablam</h2>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, et facere obcaecati modi maiores, quod ut necessitatibus quas esse sit temporibus animi! Similique incidunt officiis necessitatibus possimus ullam temporibus autem?
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/2.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Rose</h3>
+                                    <p>Influncer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Manga Parbat</h2>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, et facere obcaecati modi maiores, quod ut necessitatibus quas esse sit temporibus animi! Similique incidunt officiis necessitatibus possimus ullam temporibus autem?
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/2.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Gian</h3>
+                                    <p>Blogger</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Manga Parbat</h2>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, et facere obcaecati modi maiores, quod ut necessitatibus quas esse sit temporibus animi! Similique incidunt officiis necessitatibus possimus ullam temporibus autem?
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/2.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Gian</h3>
+                                    <p>Blogger</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-long-fill"></i>
+
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-long-line"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--==================== JOIN ====================-->
+        <!-- <section class="join section" id="join">
+            <div class="join__container container grid">
+                <div class="join__data">
+                    <h2 class="section__title">Your Journey <br> starts Here</h2>
+                    <p class="join__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum facere ad officia maiores sit qui perferendis?
+                    </p>
+                    <form action="" class="join__form">
+                        <input type="email" placeholder="Enter your email" class="Join__input">
+                        <button type="submit" class="join__button button">
+                            Join Our Newsletter
+                            <i class="ri-arrow-right-long-line"></i>
+                        </button>
+                    </form>
+                </div>
+                <img src="assets/img/7.jpg" alt="" class="join__img">
+            </div>
+        </section> -->
+
+        <section class="section contact section" id="contact" data-aos="fade-left">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
+                <form action="" id="contact-form" class="contact__form grid">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                    </div>
+                    <textarea name="user_message" placeholder="Message" class="contact__input contact__area" id=""></textarea>
+                    <button type="submit" class="button contact__button">
+                        Send Message
+                    </button>
+                    <p class="contact__message" id="contact-message">Message</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" data-aos="fade-right">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">
+                    Ramy <span>Roshdy</span>
+                </h1>
+                <!-- <h2 class="footer__education">
+                    Front-end Developer
+                </h2> -->
+            </div>
+            <div class="footer__social">
+                <a href="" target="_blank" class="footer__socail-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__socail-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__socail-link">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+            </div>
+            <span class="footer__copy">
+                &#169; All rights reserved 2025 to Ramy Roshdy. Powered by moalrmaly
+            </span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
