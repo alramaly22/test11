@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/mm.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== AOS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Ramy Roshdy </title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="home.html" class="nav__logo">
+                <img src="assets/img/mm.png" alt="">
+                <!-- <span>Ramy</span> -->
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="nav__link">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#accordion" class="nav__link">FAQS</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+            <div class="nav__buttons">
+                <!-- Thems Moon -->
+                <i class="ri-moon-clear-fill nav__theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-fill"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__background"></div>
+            <div class="home__background next"></div>
+
+            <div class="home__content" data-aos="fade-right">
+                <h1 class="home__title">Unlock your full potential — with the right coach by your side</h1>
+                <!-- <p class="home__subtitle" id="subtitleText">
+                    “With years of experience and a passion for transformation, Coach Ramy is here to guide you every step of the way”
+                </p> -->
+                <!-- <a href="#join" class="home__button">Learn More</a> -->
+            </div>
+
+            <!-- Video for mobile -->
+            <video class="home__video" autoplay muted loop playsinline>
+                <source src="assets/img/IMG_5459.mp4" type="video/mp4">
+            </video>
+        </section>
+        <!--==================== DESTINATION ====================-->
+        <section class="about section" id="about" data-aos="fade-left">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">About Us</h2>
+                    <p class="about__description">
+                        Coach Ramy Roshdy began his fitness journey in 1999. With over two decades of hands-on experience, he has competed in some of the world’s most prestigious bodybuilding events, including Musclemania and Dubai Pro (2022 & 2023).
+                        <br><br> Though he holds a degree in Business Administration, Ramy’s true passion has always been fitness. His mission is to help others transform their lives — both physically and mentally — through proper training and expert
+                        guidance.
+                        <br><br> Whether you're just getting started or chasing elite performance, Coach Ramy will guide you every step of the way with discipline, motivation, and deep expertise.
+                    </p>
+                    <!-- <a href="#" class="button">Know More</a> -->
+                    <img src="assets/img/5.jpg" alt="" class="about__bread">
+                </div>
+                <img src="assets/img/per2.jpg" alt="" class="about__image">
+            </div>
+        </section>
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section" id="testimonial" data-aos="fade-right">
+            <h2 class="section__title">What Are <br> They Saying</h2>
+            <div class="testimonial__container container grid">
+                <img src="assets/img/1.jpg" alt="" class="testimonial__img">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Transformation Journey</h2>
+                            <p class="testimonial__description">
+                                I started training with Coach Ramy in 2022, and within 9 months my entire body changed. I lost 12kg of fat and built lean muscle I never thought I could achieve. He's not just a trainer — he's like a big brother who pushes you every day. Proud to say
+                                I’m now competing locally in the UAE.
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client1.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Omar Al Mazrouei</h3>
+                                    <p>Dubai, UAE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">From Beginner to Champion</h2>
+                            <p class="testimonial__description">
+                                I came to Ramy with no experience. Just a goal — to get strong and feel confident. One year later, I competed in my first amateur bodybuilding event. Ramy’s support, his plans, his mindset coaching — all of it changed my life completely.
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client2.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Khaled Bin Zayed</h3>
+                                    <p>Abu Dhabi, UAE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">More Than Just Fitness</h2>
+                            <p class="testimonial__description">
+                                I joined Ramy's program not just to get fit, but to fix my mindset. I was struggling with confidence and energy. Today, I feel like a new person — stronger, more focused, and proud of my body. He checks in with me even outside gym stuff. That’s what makes
+                                him truly special.
+                            </p>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client3.jpg" alt="">
+                                <div class="testimonial__info">
+                                    <h3>Salem Al Farsi</h3>
+                                    <p>Sharjah, UAE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Swiper Buttons -->
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-long-fill"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-long-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== accordion ====================-->
+        <section class="accordion section container" id="accordion" data-aos="fade-right">
+            <h2 class="section__title" data-lang="faqstitle">Have Any Questions?</h2>
+
+            <div class="accordion__container">
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What makes this coaching different?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            This is not a generic plan or a one-time PDF. With me, you're not just getting a coach — you're getting someone who truly cares about your success. I’ve been competing since 1999, won top places in events like Dubai Pro and Musclemania, and now I use
+                            that experience to guide you personally every step of the way.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Will you support me outside of training?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Absolutely. My coaching isn't just about workouts — it's about full lifestyle support. Whether you need motivation, time management tips, or even help with daily habits, I’ll be there as a brother and a mentor, not just a trainer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Can I trust your experience?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Definitely. I’ve been in this field for over 20 years, and I’ve competed on international stages like Dubai Pro (2022 & 2023) and Musclemania. This is not just a job for me — it’s a lifetime of dedication and passion that I now bring to your journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What if I’m just starting out?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            No worries at all — I work with all levels. Whether you’re a beginner or advanced, I’ll create a plan that suits you. And more importantly, I’ll walk with you step by step until you feel stronger, more confident, and fully in control of your journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Will I get real results?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            100%. If you commit, I’ll match that energy. My role is to push you, support you, and guide you — not just inside the gym, but in your whole life. Real change happens when you have the right mindset and the right coach. And I’m here to make sure you have
+                            both.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== JOIN ====================-->
+        <section class="section contact section" id="contact" data-aos="fade-left">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
+                <form action="" id="contact-form" class="contact__form grid">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                    </div>
+                    <textarea name="user_message" placeholder="Message" class="contact__input contact__area" id=""></textarea>
+                    <button type="submit" class="button contact__button">
+                        Send Message
+                    </button>
+                    <p class="contact__message" id="contact-message">Message</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" data-aos="fade-right">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">
+                    Ramy <span>Roshdy</span>
+                </h1>
+                <!-- <h2 class="footer__education">
+                    Front-end Developer
+                </h2> -->
+            </div>
+            <div class="footer__social">
+                <!-- <a href="" target="_blank" class="footer__socail-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a> -->
+                <a href="https://www.instagram.com/ramyroshdy_/" target="_blank" class="footer__socail-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__socail-link">
+                    <i class="ri-tiktok-line"></i>
+                </a>
+            </div>
+            <span class="footer__copy">
+                &#169; All rights reserved 2025 to Ramy Roshdy. Powered by moalrmaly
+            </span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script>
+        /*=============== ACCORDION ===============*/
+        const accordionItems = document.querySelectorAll('.accordion__item')
+
+        // 1. Selecionar cada item
+        accordionItems.forEach((item) => {
+            const accordionHeader = item.querySelector('.accordion__header')
+
+            // 2. Seleccionar cada click del header
+            accordionHeader.addEventListener('click', () => {
+                // 7. Crear la variable
+                const openItem = document.querySelector('.accordion-open')
+
+                // 5. Llamar a la funcion toggle item
+                toggleItem(item)
+
+                // 8. Validar si existe la clase
+                if (openItem && openItem !== item) {
+                    toggleItem(openItem)
+                }
+            })
+        })
+
+        // 3. Crear una funcion tipo constante
+        const toggleItem = (item) => {
+                // 3.1 Crear la variable
+                const accordionContent = item.querySelector('.accordion__content')
+
+                // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+                if (item.classList.contains('accordion-open')) {
+                    accordionContent.removeAttribute('style')
+                    item.classList.remove('accordion-open')
+                } else {
+                    // 4. Agregar el height maximo del content
+                    accordionContent.style.height = accordionContent.scrollHeight + 'px'
+                    item.classList.add('accordion-open')
+                }
+            }
+            // calc video
+    </script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
