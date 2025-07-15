@@ -802,9 +802,9 @@
     }
     
     .packages {
-        background: linear-gradient(rgb(0 0 0 / 48%), rgba(0, 0, 0, 0.7)), url(../img/4.jpg) no-repeat;
+        background: linear-gradient(rgb(0 0 0 / 48%), rgba(0, 0, 0, 0.7)), url(../img/per1.jpg) no-repeat;
         background-size: cover;
-        background-position: center top;
+        background-position: center;
     }
     /* .silver {
     border-color: #b8b8b8;
@@ -889,6 +889,15 @@
     background-size: cover;
     background-position: center top;
 } */
+    
+    .discount__note,
+    .discount__price {
+        margin-bottom: 1rem;
+    }
+    
+    .discount__data {
+        text-align: initial;
+    }
     
     .iconprice {
         font-weight: 600;
@@ -1240,6 +1249,120 @@
         bottom: 4.5rem;
         font-size: var(--small-font-size);
     }
+    /*=============== ACCORDION ===============*/
+    
+    .accordion {
+        display: grid;
+        align-content: center;
+        /* height: 100vh; */
+    }
+    
+    .accordion__container {
+        display: grid;
+        row-gap: .75rem;
+        padding: 2rem 1rem;
+        background-color: #202020;
+        border-radius: .5rem;
+        box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/per6.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+    
+    .accordion__title {
+        font-size: 1rem;
+        color: #cfcfcf;
+        font-weight: 400;
+        margin-top: .15rem;
+        transition: .2s;
+    }
+    
+    .accordion__header {
+        display: flex;
+        column-gap: .5rem;
+        padding: 1.25rem 1.25rem 1.25rem 1rem;
+        cursor: pointer;
+    }
+    
+    .accordion__description {
+        color: aliceblue;
+        padding: 0 1.25rem 1.25rem 3rem;
+        font-size: var(--smaller-font-size);
+    }
+    
+    .accordion__icon {
+        font-size: 1.5rem;
+        height: max-content;
+        color: var(--title-color);
+        transition: .3s;
+    }
+    
+    .accordion__item {
+        box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
+        background-color: #000000b3;
+        border-radius: .25rem;
+        position: relative;
+        transition: all .25s ease;
+    }
+    
+    .accordion__item::after {
+        content: '';
+        background-color: var(--firest-color);
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: .25rem 0 0 .25rem;
+    }
+    
+    .accordion__item:nth-child(1) {
+        background: #000000b3;
+    }
+    
+    .accordion__item:nth-child(1)::after {
+        background-color: var(--firest-color);
+    }
+    
+    .accordion__item:nth-child(2) {
+        background: #000000b3;
+    }
+    
+    .accordion__item:nth-child(2)::after {
+        background-color: var(--firest-color);
+    }
+    
+    .accordion__item:nth-child(3) {
+        background: #000000b3;
+    }
+    
+    .accordion__item:nth-child(3)::after {
+        background-color: var(--firest-color);
+    }
+    
+    .accordion__item:nth-child(4) {
+        background: #000000b3;
+    }
+    
+    .accordion__item:nth-child(4)::after {
+        background-color: var(--firest-color);
+    }
+    
+    .accordion__content {
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+    }
+    /*Rotate icon and add font weight to titles*/
+    
+    .accordion-open .accordion__icon {
+        transform: rotate(45deg);
+    }
+    
+    .accordion-open .accordion__title {
+        font-weight: 600;
+    }
     /*=============== FOOTER ===============*/
     
     .footer {
@@ -1513,7 +1636,7 @@
             column-gap: 7rem;
         }
         .about__image {
-            width: 450px;
+            width: 350px;
         }
         .about__bread {
             width: 90px;

@@ -31,9 +31,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER HOME ===============*/
 const backgrounds = [
-    "assets/img/gallery-img-1.png",
-    "assets/img/gallery-img-2.png",
-    "assets/img/gallery-img-3.png"
+    "assets/img/background2.png",
+    "assets/img/background3.png",
+    "assets/img/background4.png"
 ];
 
 let current = 0;
