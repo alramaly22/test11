@@ -214,7 +214,7 @@
                 <img src="assets/img/6.jpg" alt="" class="app__img">
             </div>
         </section> -->
-
+        <!-- Booking Section (Connected with your existing styles) -->
         <section class="section call" id="call" data-aos="fade-left">
             <div class="discount__container container grid call__grid">
                 <div class="discount__data">
@@ -228,14 +228,31 @@
                     <p class="discount__note">
                         📅 Calls are available only on Saturday and Sunday.
                     </p>
-                    <a href="#" class="button-glow">
-                Book Now
-            </a>
+                    <button class="button-glow" onclick="openBookingModal()">
+        Book Now
+      </button>
                 </div>
 
                 <img src="assets/img/2.jpg" alt="Consultation Call" class="discount__img call__img" />
             </div>
         </section>
+
+        <!-- Booking Modal -->
+        <div id="bookingModal" style="display: none;" class="modal-container">
+            <div class="modal">
+                <button onclick="closeBookingModal()" style="float:right; background:transparent; color:var(--white-color); border:none; font-size:1.5rem; cursor:pointer">&times;</button>
+                <h3 style="margin-top:0.5rem">Select a Time Slot</h3>
+
+                <!-- Moved PayPal button to the top -->
+                <button id="paypalButton" class="button-glow2" style="display: none; margin: 1rem auto;">
+      Pay with PayPal
+    </button>
+
+                <div id="timeSlots" class="slots-grid"></div>
+
+                <button onclick="closeBookingModal()" class="button" style="margin-top: 1rem">Cancel</button>
+            </div>
+        </div>
 
         <!--==================== PRICING ====================-->
         <section class="packages section" id="pricing">
@@ -445,8 +462,78 @@
     </script>
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        const timeSlotsContainer = document.getElementById("timeSlots");
+        const paypalButton = document.getElementById("paypalButton");
+        const bookedSlots = JSON.parse(localStorage.getItem("bookedSlots") || "[]");
+        let selectedSlot = null;
 
+        function openBookingModal() {
+            generateTimeSlots();
+            bookingModal.style.display = "flex";
+            document.body.style.overflow = "hidden"; // prevent scroll behind modal
 
+            // Scroll to top of modal after it opens
+            setTimeout(() => {
+                bookingModal.querySelector(".modal").scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }, 100);
+        }
+
+        function closeBookingModal() {
+            bookingModal.style.display = "none";
+            document.body.style.overflow = "auto";
+            selectedSlot = null;
+            paypalButton.style.display = "none";
+            const prev = document.querySelector(".slot.selected");
+            if (prev) prev.classList.remove("selected");
+        }
+
+        function generateTimeSlots() {
+            timeSlotsContainer.innerHTML = "";
+            const days = ["Saturday", "Sunday"];
+            const startHour = 8;
+            const endHour = 20;
+
+            for (let day of days) {
+                for (let hour = startHour; hour < endHour; hour++) {
+                    for (let min of[0, 30]) {
+                        const time = `${day} ${String(hour).padStart(2, "0")}:${String(min).padStart(2, "0")}`;
+                        const slotDiv = document.createElement("div");
+                        slotDiv.textContent = time;
+                        slotDiv.className = "slot";
+
+                        if (bookedSlots.includes(time)) {
+                            slotDiv.classList.add("booked");
+                        } else {
+                            slotDiv.onclick = () => selectSlot(slotDiv, time);
+                        }
+
+                        timeSlotsContainer.appendChild(slotDiv);
+                    }
+                }
+            }
+        }
+
+        function selectSlot(element, time) {
+            const previouslySelected = document.querySelector(".slot.selected");
+            if (previouslySelected) previouslySelected.classList.remove("selected");
+            element.classList.add("selected");
+            selectedSlot = time;
+            paypalButton.style.display = "inline-block";
+
+            // 🔽 Scroll smoothly to PayPal button
+            setTimeout(() => {
+                paypalButton.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 100);
+        }
+    </script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
